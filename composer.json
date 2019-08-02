@@ -20,5 +20,12 @@
         "psr-4": {
             "FuriosoJack\\PayUPaymentLaravel\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FuriosoJack\\PayUPaymentLaravel\\PayUPaymentLaravelServiceProvider"
+            ]
+        }
     }
 }
