@@ -1,11 +1,8 @@
 <?php
-
-
 namespace FuriosoJack\PayUPaymentLaravel\Traits;
 use FuriosoJack\PayUPaymentLaravel\Facades\LaravelPayU;
 use FurosoJack\PayUPaymentSDK\PayU\exceptions\PayUException;
 use FurosoJack\PayUPaymentSDK\PayU\PayUReports;
-use FurosoJack\PayUPaymentSDK\PayU\util\InvalidParameterException;
 use FurosoJack\PayUPaymentSDK\PayU\util\PayUParameters;
 use InvalidArgumentException;
 
@@ -19,10 +16,11 @@ class Searchable
     /**
      * Search an order using the id asigned by PayU.
      *
-     * @param  callback  $onSuccess
-     * @param  callback  $onError
+     * @param  callback $onSuccess
+     * @param  callback $onError
      * @return mixed
      *
+     * @throws \FurosoJack\PayUPaymentSDK\PayU\exceptions\ConnectionException
      */
     public function searchById($onSuccess, $onError)
     {
@@ -60,17 +58,17 @@ class Searchable
             $onError($exc);
         } catch (InvalidArgumentException $exc) {
             $onError($exc);
-        } catch (\FurosoJack\PayUPaymentSDK\PayU\InvalidArgumentException $e) {
-        } catch (InvalidParameterException $e) {
         }
     }
+
     /**
      * Search an order using the transactionId asigned by PayU.
      *
-     * @param  callback  $onSuccess
-     * @param  callback  $onError
+     * @param  callback $onSuccess
+     * @param  callback $onError
      * @return mixed
      *
+     * @throws \FurosoJack\PayUPaymentSDK\PayU\exceptions\ConnectionException
      */
     public function searchByTransaction($onSuccess, $onError)
     {
