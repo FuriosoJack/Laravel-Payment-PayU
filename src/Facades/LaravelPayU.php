@@ -1,12 +1,12 @@
 <?php
 namespace FuriosoJack\PayUPaymentLaravel\Facades;
 use Exception;
-use FurosoJack\PayUPaymentSDK\PayU\api\Environment;
-use FurosoJack\PayUPaymentSDK\PayU\exceptions\ConnectionException;
-use FurosoJack\PayUPaymentSDK\PayU\exceptions\PayUException;
-use FurosoJack\PayUPaymentSDK\PayU\PayU;
-use FurosoJack\PayUPaymentSDK\PayU\PayUPayments;
-use FurosoJack\PayUPaymentSDK\PayU\util\PayUParameters;
+use FuriosoJack\PayUPaymentSDK\PayU\api\Environment;
+use FuriosoJack\PayUPaymentSDK\PayU\exceptions\ConnectionException;
+use FuriosoJack\PayUPaymentSDK\PayU\exceptions\PayUException;
+use FuriosoJack\PayUPaymentSDK\PayU\PayU;
+use FuriosoJack\PayUPaymentSDK\PayU\PayUPayments;
+use FuriosoJack\PayUPaymentSDK\PayU\util\PayUParameters;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use InvalidArgumentException;

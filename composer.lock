@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "190bb0f5c548d72d9f19a43f1d8ef690",
+    "content-hash": "d203d7fbc8079324a1d3a636224fa5b6",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -79,12 +79,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FuriosoJack/PayU-Payment-SDK.git",
-                "reference": "3c90a8bb4c07e4da659ade30ed17d79659c1a8b3"
+                "reference": "451986f7c266149e1e783b3d80b74397b7cda955"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FuriosoJack/PayU-Payment-SDK/zipball/3c90a8bb4c07e4da659ade30ed17d79659c1a8b3",
-                "reference": "3c90a8bb4c07e4da659ade30ed17d79659c1a8b3",
+                "url": "https://api.github.com/repos/FuriosoJack/PayU-Payment-SDK/zipball/451986f7c266149e1e783b3d80b74397b7cda955",
+                "reference": "451986f7c266149e1e783b3d80b74397b7cda955",
                 "shasum": ""
             },
             "require-dev": {
@@ -108,7 +108,7 @@
                 }
             ],
             "description": "Repositorio personalizado y acomodado para pagos con PayU basando en el SDK Official de PayU",
-            "time": "2019-08-01 20:53:02"
+            "time": "2019-08-02 13:49:48"
         },
         {
             "name": "illuminate/container",

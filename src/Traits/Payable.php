@@ -1,9 +1,9 @@
 <?php
 namespace FuriosoJack\PayUPaymentLaravel\Traits;
 use FuriosoJack\PayUPaymentLaravel\Facades\LaravelPayU;
-use FurosoJack\PayUPaymentSDK\PayU\exceptions\PayUException;
-use FurosoJack\PayUPaymentSDK\PayU\PayUPayments;
-use FurosoJack\PayUPaymentSDK\PayU\util\PayUParameters;
+use FuriosoJack\PayUPaymentSDK\PayU\exceptions\PayUException;
+use FuriosoJack\PayUPaymentSDK\PayU\PayUPayments;
+use FuriosoJack\PayUPaymentSDK\PayU\util\PayUParameters;
 use InvalidArgumentException;
 
 /**
