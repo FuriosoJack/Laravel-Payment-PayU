@@ -37,13 +37,15 @@ class Searchable
             $onError($exc);
         }
     }
+
     /**
      * Search an order using the reference created before attempt the processing.
      *
-     * @param  callback  $onSuccess
-     * @param  callback  $onError
+     * @param  callback $onSuccess
+     * @param  callback $onError
      * @return mixed
      *
+     * @throws \FurosoJack\PayUPaymentSDK\PayU\exceptions\ConnectionException
      */
     public function searchByReference($onSuccess, $onError)
     {
